@@ -1,11 +1,14 @@
 html, body {
     height: 100%;
-    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 header {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     background: #ffffff;    
     border: #cccccc;
 }
@@ -15,8 +18,7 @@ header {
     text-align: center;
     background: #4aaaa5;
     width: 20%;
-    height: 60px;
-    padding-top: 40px;
+    padding: 40px 0px; 
     font-family: serif;
     font-size: 28px;
     color: #ffffff;
@@ -24,31 +26,36 @@ header {
 
 .li1 {
     float: right;
-    margin: 8px;
+    padding: 40px 10px;
     text-decoration-style: none;
     text-decoration-line: none; 
-    padding-top: 30px;
     color: #666666;
     font-family: sans-serif;
+    font-size: 18px;
 }
 
 .wrapper {
     width: 960px;
     min-height: 100%;
     margin: 0 auto;
-    margin-bottom: -75px;
+    margin-bottom: -35px;
     overflow: auto;
 }
 
 #profile_picture {
     width: 30%;
     height: 25%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 75px;
 }
+
 
 /* Lots of Bigly things */
 h1 {
     font-size: 24px;
     color: #4aaaa5;
+    margin-left: 75px;
 }
 
 h2 {
@@ -60,9 +67,11 @@ hr {
     align: center;
 }
 
+
 p {
     font-family: sans-serif;
     line-height: 25px;
+    margin-right: 75px;
 }
 
 /* Floats */
@@ -70,9 +79,10 @@ p {
     float: left;
     background: #ffffff;
     border: #dddddd;
-    margin-top: 50px;
+    margin-top: 75px;
     margin-right: 18px;
     text-align: left;
+    padding: 20px;
 }
 
 .maincontentwidth {
@@ -85,7 +95,7 @@ p {
     width: 270px;
     background: #ffffff;
     border: #dddddd;
-    margin-top: 50px;
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -96,18 +106,52 @@ body {
 }
 
 /* Portfolio */
+
 .column1 {
     float: left;
-    padding-right: 20px;
+    padding-right: 85px;
+    padding-left: 75px;
+}
+
+.textoverlay {
+    position: relative;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #4aaaa5;
 }
 
 .comlumn2 {
     float: right;
+    padding-right: 75px;
 }
+
+.textoverlay2 {
+    position: relative;
+    width: 150px;    
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background: #4aaaa5;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
 /* Input Form Style */
 input[type=text], select, textarea {
     width: 100%; 
-    padding: 12px;  
+    padding: 12px; 
+    padding-left: 25px;
+    padding-right: 25px; 
     border: 1px solid #666666; 
     border-radius: 4px; 
     box-sizing: border-box; 
@@ -139,6 +183,7 @@ footer {
     width: 100%;
     height: 100px;
     background: #666666;
+    border-top: 4px solid  #4aaaa5;
 }
 
 .footer,
