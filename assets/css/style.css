@@ -109,6 +109,16 @@ footer {
   border-top: 8px solid #4aaaa5;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
 /* sidebar */
 
 .sidebar {
@@ -237,5 +247,6 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
 
 
